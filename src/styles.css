@@ -139,5 +139,5 @@ Button:hover {
   display: none;
 }
 dialog::backdrop{
-  background-color: aqua;
+  background-color: rgba(93, 188, 251, 0.5);
 }
