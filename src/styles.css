@@ -1,7 +1,7 @@
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-color: #c1d72e;
+  background-color: #9a42e7;
   color: white;
   text-align: center;
   height: 100%;
@@ -40,10 +40,10 @@ p {
 }
 
 Button {
-  background: #c1d72e;
+  background: #f2b5e7;
   border-radius: 5px;
   border: solid 1px white;
-  color: white;
+  color: rgb(29, 13, 205);
   width: 35px;
   height: 35px;
   margin: 0 10px 10px 0;
@@ -82,4 +82,62 @@ Button:hover {
   background: white;
   border: solid 1px white;
   color: #c1d72e;
+}
+#shark{
+  width: 100px;
+  color: rgb(251, 95, 95);
+  background-color: blue;
+}
+.dialog{
+  display: grid;
+  grid-template-columns: 250px 350px;
+  grid-template-rows: 250px 250px 250px;
+  grid-template-areas: 
+  "a a",
+  "b c",
+  "d d";
+  min-height: 700px;
+  min-width: 700px;
+  border-radius: 50px;
+  
+  
+}
+#top{
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 40px;
+  margin-left: 150px;
+  
+}
+#milieuGauche{
+  grid-row: 2;
+  grid-column: 1;
+  margin: 30px;
+}
+#milieuDroite{
+  grid-row: 2;
+  grid-column: 2;
+  margin-left: 100px;
+  
+}
+#dessous{
+ grid-row: 3;
+ grid-column-start: 1;
+ grid-column-end: 3;
+  margin-left: 110px;
+  margin-top: 80px;
+}
+#close{
+  min-height: 75px;
+  min-width: 200px;
+}
+#border{
+  border-bottom: solid black 5px;
+}
+.hidden{
+  display: none;
+}
+dialog::backdrop{
+  background-color: aqua;
 }

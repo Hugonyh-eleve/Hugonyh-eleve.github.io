@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VANILLA JAVASCRIPT HANGMAN GAME</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="src/requin.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1>Pendu</h1>
+      <h2>Vanilla Javascript jeux du pendu requin</h2>
+      <p>
+        Utilisez l'alphabet ci-dessous pour deviner le mot ou cliquez sur indice pour obtenir un indice.
+      </p>
+    </div>
+
+    <div class="wrapper">
+      <div class="alphabetButton" id="alphabetButtons"></div>
+      <p id="categoryName"></p>
+      <div id="hold"></div>
+      <p id="mylives"></p>
+      <p id="clue">Clue -</p>
+      <canvas id="stickman"
+        >Ce texte s'affichera si le navigateur ne prend PAS en charge la balise HTML5 Canvas</canvas
+      >
+      <div class="container">
+        <button class="btn-2" id="hint">indice</button>
+        <button class="btn-2" id="reset">rejouer</button>
+      </div>
+    </div>
+    <a href="index.html">
+    <button id="shark">retour</button>
+    </a>
+    <script src="src/index2.js"></script>
+  </body>
+</html>

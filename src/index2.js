@@ -12,42 +12,10 @@ const buttonReset = document.getElementById("reset");
 const livesDisplay = document.getElementById("mylives");
 var myStickman = document.getElementById("stickman");
 var context = myStickman.getContext("2d");
-const dialog = document.getElementById("dialog");
-const closeButton = document.getElementById("close");
-const checkbox = document.getElementById("afficher");
-
-
-closeButton.addEventListener("click", () => {
-
-  /**
-    if (checkbox.checked) {
-      //garder en memoir local le bouton cocher
-      localStorage.setItem("dialogClosed", "true");
-    }*/
-    dialog.close();
-    
-  });
-  
-  dialog.addEventListener("load", Opendialog())
-  function Opendialog(){
-    dialog.showModal();
-  }
-  let shark = document.getElementById("shark")
-  let codesecret = document.getElementById("codesecret");
-
-  function VerifierCode(){
-   
-    let codesecretTest = codesecret.value;
-    if(codesecretTest == "requin"){
-      shark.setAttribute("class", "");
-    }
-  }
-  codesecret.addEventListener("input", VerifierCode);
-
 
 //generate alphabet button
 function generateButton() {
-  var buttonsHTML = "abcdefghijklmnopqrstuvwxyzéèêë"
+  var buttonsHTML = "lesdntamr"
     .split("")
     .map(
       (letter) =>
@@ -76,67 +44,21 @@ function handleClick(event) {
 
 //word array
 const question = [
- "La catégorie choisie est les équipes de la Premier League",
-  "La catégorie choisie est les films",
-  "La catégorie choisie est les villes",
-  "La catégorie choisie est les jeux vidéos",
-  "La catégorie choisie est les exercice de muscalation"
+
+  "La catégorie choisie est les films"
+  
 ];
 
 const categories = [
-  [
-    "everton",
-    "liverpool",
-    "swansea",
-    "chelsea",
-    "hull",
-    "manchester-city",
-    "newcastle-united"
-  ],
-  ["alien", "inspecteur-harry", "gladiateur", "trouver-némo", "les-dents-de-la-mer"],
-  ["manchester", "milan", "madrid", "amsterdam", "prague"],
-  ["terraria","minecraft","wii-sports-resort","god-of-war", "monster-hunter", "just-dance"],
-  ["développé-couché","soulevé-de-terre", "extension-des-triceps","traction","élévation-latérale"]
+
+  ["les-dents-de-la-mer"]
+
 ];
 
 const hints = [
+
   [
-    "situé en Mersyside",
-    "situé en Mersyside",
-   "Première équipe galloise à atteindre la Premier League",
-    "Propriété d'un milliardaire russe",
-    "Autrefois dirigée par Phil Brown",
-    "Finaliste de la FA Cup en 2013",
-    "Premier club de Gazza"
-  ],
-  [
-    "Film d'horreur de science-fiction",
-    "Film d'action américain de 1971",
-    "Drame historique",
-    "Poisson animé",
-    "Grand requin blanc"
-  ],
-  [
-    "Ville du nord du Royaume-Uni",
-    "Domicile de l'AC et de l'Inter",
-    "Capitale de l'Espagne",
-    "Capitale des Pays-Bas",
-    "Capitale de la République tchèque"
-  ],
-  [
-    "essayez aussi minecraft",
-    "essayez aussi terraria",
-    "matt",
-    "kratos",
-    "le fatalis",
-    "mariah carey"
-  ],
-  [
-    "L'un des exercice les plus aimé;",
-    "Eddi hall est les premier a voir fais 500kg sur cet exercice",
-    "cet exrcice entraine le muscle qui constitue 60% de la mass des haut du bra",
-    "david Goggins a obtenue deux fois le record son dernier etais de 7801 repetitions",
-    "un exercice qui est reconue pour etre extrement dificile"
+    "Dum-dum Dum-dum"
   ]
 ];
 

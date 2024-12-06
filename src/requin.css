@@ -1,0 +1,19 @@
+body{
+    background-color: darkblue;
+}
+Button {
+    background: #f2b5e7;
+    border-radius: 5px;
+    border: solid 1px white;
+    color: rgb(29, 13, 205);
+    width: 35px;
+    height: 35px;
+    margin: 0 10px 10px 0;
+    outline: none;
+  }
+  Button:hover {
+    transition: 0.5s;
+    background: white;
+    border: solid 1px white;
+    color: #23232391;
+  }

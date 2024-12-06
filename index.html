@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>VANILLA JAVASCRIPT HANGMAN GAME</title>
+    <title>Jeu du pendu</title>
     <meta charset="UTF-8" />
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
+    
+    <dialog id="dialog">
+      <div class="dialog">
+      <div id="top">
+      <h1 id="border">Projet personnel</h1>
+      <p>Design web gr.1 - Automne 2024</p>
+        </div>
+        <div id="milieuGauche">
+          <p>Réalisé par <br>Hugo Lauzière</p>
+          <p>Inspiration :<br><a href="https://codesandbox.io/s/z9fhk">https://codesandbox.io/s/z9fhk</a></p>
+        </div>
+        <img id="milieuDroite" src="img/megaman.png" alt="image de megaman">
+        <div id="dessous">
+          <button id="close">Fermer la fenêtre</button><br>
+          <input type="checkbox" id="afficher">
+          <label for="afficher">Ne plus afficher cette fenêtre</label>
+        </div>
+      </div>
+    </dialog>
+  
+    
     <div class="wrapper">
-      <h1>Hangman</h1>
-      <h2>Vanilla Javascript Hangman Game</h2>
+      <h1>Pendu</h1>
+      <h2>Vanilla Javascript jeux du pendu</h2>
       <p>
-        Use the alphabet below to guess the word, or click hint to get a clue.
+        Utilisez l'alphabet ci-dessous pour deviner le mot ou cliquez sur indice pour obtenir un indice.
       </p>
     </div>
 
@@ -20,16 +41,21 @@
       <p id="categoryName"></p>
       <div id="hold"></div>
       <p id="mylives"></p>
-      <p id="clue">Clue -</p>
+      <p id="clue">indice -</p>
       <canvas id="stickman"
-        >This Text will show if the Browser does NOT support HTML5 Canvas
-        tag</canvas
+        >Ce texte s'affichera si le navigateur ne prend PAS en charge la balise HTML5 Canvas</canvas
       >
       <div class="container">
-        <button class="btn-2" id="hint">Hint</button>
-        <button class="btn-2" id="reset">Play again</button>
+        <button class="btn-2" id="hint">indice</button>
+        <button class="btn-2" id="reset">rejouer</button>
       </div>
     </div>
+    <input type="text" id="codesecret">
+    <label for="codesecret">entre le code secret</label>
+    <a href="requin.html">
+    <button id="shark" class="hidden" >Les dents de la mer</button>
+  </a>
+
     <script src="src/index.js"></script>
   </body>
 </html>
